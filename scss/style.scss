@@ -333,7 +333,7 @@
     &__items {
         max-width: 757px;
         padding-bottom: 15px;
-        padding-left: 25px;
+        padding-left: 55px;
         position: relative;
         &::before {
             content: "";
@@ -343,7 +343,7 @@
             width: 600px;
             height: 300px;
             bottom: -50px;
-            right: -356px;
+            right: -414px;
             z-index: -1;
         }
     }
