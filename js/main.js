@@ -8,13 +8,13 @@ $(function(){
         <path d="M0.78161 17L9 9L0.78161 1"/>
         </svg>
         </button>`,
-        infinite: false,
-    });
+        infinite: false,        
+    }, {passive: true});
 
     $(".questions__item-title").on("click", function() {
         $(".questions__item").removeClass("questions__item--active");
         $(this).parent().addClass("questions__item--active");
-    })
+    }, {passive: true})
 
     $('#fullpage').fullpage({
 		//options here
@@ -24,7 +24,7 @@ $(function(){
         scrollOverflow: true,
         anchors: ['top', 'products', 'benefits', 'specification', 'questions', 'contacts'],
         menu: '#header__nav',
-    });
+    }, {passive: true});
     
     $(".menu__btn").on("click", function() {
         $(".menu__btn").toggleClass("menu__btn--active");
@@ -34,6 +34,15 @@ $(function(){
     $(".menu__list-link").on("click", function() {
         $(".menu__btn").removeClass("menu__btn--active");
         $(".menu__list").removeClass("menu__list--active");
-    })
-  
+    }, {passive: true})
+    
+    Modernizr.on('webp', function(result) {
+        if (result) {
+            // $(".top").addClass("webp");
+            $(".page-section").addClass("webp");            
+        } else {
+            // $(".top").addClass("no-webp");
+            $(".page-section").addClass("no-webp");            
+        }
+    }, {passive: true});
 });

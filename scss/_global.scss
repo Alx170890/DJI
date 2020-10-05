@@ -38,9 +38,17 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
-
+.no-webp .page-section {
+    background-image: url(../img/page-bg.jpg);
+}
+.webp .page-section {
+    background-image: url(../img/page-bg.webp);
+}
 .page-section {    
-    background: url(../img/page-bg.jpg) no-repeat center top;
+    background-color: #324231;
+    // background: url(../img/page-bg.jpg) no-repeat center top;
+    background-repeat: no-repeat;
+    background-position: center top;    
     background-size: cover;
     position: relative;    
     &:before {

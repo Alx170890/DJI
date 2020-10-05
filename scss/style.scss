@@ -58,9 +58,17 @@
         display: none;
     }
 }
-
+.no-webp .top {
+    background-image: url(../img/top-bg.jpg);
+}
+.webp .top {
+    background-image: url(../img/top-bg.webp);
+}
 .top {
-    background-image: url(../img/top-bg.jpg);    
+    background-color: #324231;
+    background-repeat: no-repeat;
+    background-position: center top;   
+    // background-image: url(../img/top-bg.jpg);    
     &::before {
         content: "";
         position: absolute;
