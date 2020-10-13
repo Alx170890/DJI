@@ -38,9 +38,11 @@ $(function(){
     
     Modernizr.on('webp', function(result) {
         if (result) {
-            $(".page-section").addClass("webp");            
+            $(".page-section").addClass("webp");  
+            $(".top").addClass("webp");     
         } else {
-            $(".page-section").addClass("no-webp");            
+            $(".page-section").addClass("no-webp");  
+            $(".top").addClass("no-webp");                      
         }
     });
 });

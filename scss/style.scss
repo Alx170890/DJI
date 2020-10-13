@@ -336,7 +336,6 @@
         line-height: 18px;
     }
 }
-
 .questions {
     &__items {
         max-width: 757px;
@@ -345,7 +344,9 @@
         position: relative;
         &::before {
             content: "";
-            background: url(../img/questions-bg-3.png) no-repeat center top;
+            background-image: url(../img/questions-bg-3.png);
+            background-repeat: no-repeat;
+            background-position: center top;
             background-size: cover;
             position: absolute;
             width: 600px;
